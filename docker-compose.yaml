@@ -26,7 +26,7 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DATABASE=test_db
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:6.6.2
+    build: ./es
     restart: always
     ports:
       - 9200:9200
